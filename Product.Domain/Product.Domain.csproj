@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ReadModel\Events\" />
+    <Folder Include="ReadModel\Handlers\" />
+    <Folder Include="WriteModel\Handlers\" />
+    <Folder Include="WriteModel\Commands\" />
+    <Folder Include="WriteModel\Domain\" />
+  </ItemGroup>
+
+</Project>
