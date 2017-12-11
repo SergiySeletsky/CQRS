@@ -5,11 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ReadModel\Events\" />
     <Folder Include="ReadModel\Handlers\" />
     <Folder Include="WriteModel\Handlers\" />
-    <Folder Include="WriteModel\Commands\" />
-    <Folder Include="WriteModel\Domain\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Product.Domain.Core\Product.Domain.Core.csproj" />
   </ItemGroup>
 
 </Project>

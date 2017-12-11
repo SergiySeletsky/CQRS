@@ -3,12 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Product.Domain.Core.Commands;
+using Product.Domain.WriteModel.Commands;
 
 namespace Product.Api.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        private readonly ICommandBus bus;
+
+        public ValuesController(ICommandBus bus)
+        {
+            this.bus = bus;
+        }
+
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
@@ -27,6 +36,7 @@ namespace Product.Api.Controllers
         [HttpPost]
         public void Post([FromBody]string value)
         {
+            var result = bus.Send(new CreateUserCommand()).Result;
         }
 
         // PUT api/values/5

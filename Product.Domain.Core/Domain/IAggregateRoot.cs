@@ -6,6 +6,6 @@ namespace Product.Domain.Core.Domain
 {
     public interface IAggregateRoot : IEntity
     {
-        int Version { get; set; }
+        int Version { get; }
     }
 }
