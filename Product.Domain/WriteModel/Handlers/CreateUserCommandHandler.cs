@@ -10,7 +10,7 @@ namespace Product.Domain.WriteModel.Handlers
 {
     public class CreateUserCommandHandler : ICommandHandler<CreateUserCommand>
     {
-        public Task Handle(CreateUserCommand message, CancellationToken token = default(CancellationToken))
+        public Task<CommandResult> Handle(CreateUserCommand message)
         {
             throw new NotImplementedException();
         }
