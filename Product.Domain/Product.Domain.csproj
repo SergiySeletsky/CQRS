@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="ReadModel\Handlers\" />
-    <Folder Include="WriteModel\Handlers\" />
   </ItemGroup>
 
   <ItemGroup>
