@@ -8,8 +8,8 @@ namespace Product.Domain.Core.Events
 {
     public interface IEventStore
     {
-        Task Save(IEnumerable<IEvent> events, CancellationToken token = default(CancellationToken));
+        Task Save(IEnumerable<IEvent> events);
 
-        Task<IEnumerable<IEvent>> Get(Guid aggregateId, int version, CancellationToken token = default(CancellationToken));
+        Task<IEnumerable<IEvent>> Get(Guid aggregateId, int version);
     }
 }

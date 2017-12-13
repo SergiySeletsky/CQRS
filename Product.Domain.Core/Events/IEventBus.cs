@@ -8,6 +8,6 @@ namespace Product.Domain.Core.Events
 {
     public interface IEventBus
     {
-        Task Publish<T>(T @event, CancellationToken token = default(CancellationToken)) where T : IEvent;
+        Task Publish<T>(T @event) where T : IEvent;
     }
 }
