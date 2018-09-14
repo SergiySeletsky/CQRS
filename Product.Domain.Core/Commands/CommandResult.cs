@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Product.Domain.Core.Messages;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Product.Domain.Core.Commands
 {
-    public class CommandResult
+    public class CommandResult : ICommandResult
     {
         private CommandResult() { }
 

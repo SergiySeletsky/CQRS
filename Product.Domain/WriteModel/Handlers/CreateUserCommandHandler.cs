@@ -1,4 +1,5 @@
 ﻿using Product.Domain.Core.Commands;
+using Product.Domain.Core.Messages;
 using Product.Domain.WriteModel.Commands;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,9 @@ namespace Product.Domain.WriteModel.Handlers
 {
     public class CreateUserCommandHandler : ICommandHandler<CreateUserCommand>
     {
-        public Task<CommandResult> Handle(CreateUserCommand message)
+        public async Task<ICommandResult> Handle(CreateUserCommand message)
         {
-            throw new NotImplementedException();
+            return await Task.FromResult(CommandResult.Success);
         }
     }
 }
