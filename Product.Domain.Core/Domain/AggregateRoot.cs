@@ -28,11 +28,11 @@ namespace Product.Domain.Core.Domain
                 var i = 0;
                 foreach (var @event in changes)
                 {
-                    if (@event.Id == Guid.Empty && Id == Guid.Empty)
+                    if (@event.Id == string.Empty && Id == string.Empty)
                     {
                         throw new AggregateOrEventMissingIdException(GetType(), @event.GetType());
                     }
-                    if (@event.Id == Guid.Empty)
+                    if (@event.Id == string.Empty)
                     {
                         @event.Id = Id;
                     }

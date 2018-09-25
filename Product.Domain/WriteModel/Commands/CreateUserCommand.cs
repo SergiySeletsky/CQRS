@@ -6,7 +6,7 @@ namespace Product.Domain.WriteModel.Commands
     public class CreateUserCommand : Command
     {
         //[IgnoreJson]
-        public override Guid Id { set; get; }
+        public override string Id { set; get; }
 
         public string Name { set; get; }
     }

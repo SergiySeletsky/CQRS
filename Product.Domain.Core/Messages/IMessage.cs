@@ -10,6 +10,6 @@ namespace Product.Domain.Core.Messages
         /// <summary>
         /// Unique system message identifier
         /// </summary>
-        Guid Id { get; }
+        string Id { get; }
     }
 }

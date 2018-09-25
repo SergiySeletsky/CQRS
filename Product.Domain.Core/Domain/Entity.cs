@@ -6,7 +6,7 @@ namespace Product.Domain.Core.Domain
 {
     public abstract class Entity : IEntity
     {
-        public Guid Id { get; protected set; }
+        public string Id { get; protected set; }
 
         public override bool Equals(object obj)
         {

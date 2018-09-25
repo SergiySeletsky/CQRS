@@ -8,7 +8,7 @@ namespace Product.Domain.WriteModel.Domain
     public class User : AggregateRoot
     {
         private User() { }
-        public User(Guid id, string name)
+        public User(string id, string name)
         {
             Id = id;
             ApplyChange(new UserCreatedEvent());

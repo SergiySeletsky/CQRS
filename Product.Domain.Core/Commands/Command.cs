@@ -6,6 +6,6 @@ namespace Product.Domain.Core.Commands
     {
         public int ExpectedVersion { get; set; }
 
-        public virtual Guid Id { get; set; }
+        public virtual string Id { get; set; }
     }
 }

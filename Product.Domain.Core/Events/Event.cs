@@ -4,7 +4,7 @@ namespace Product.Domain.Core.Events
 {
     public abstract class Event : IEvent
     {
-        public Guid Id { get; set; }
+        public string Id { get; set; }
 
         public int Version { get; set; }
 
